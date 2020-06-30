@@ -2,6 +2,10 @@ var mySwiper = new Swiper ('.swiper-container', {
     // Optional parameters
     direction: 'vertical',
     loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false
+    }
 
     // If we need pagination
     pagination: {
@@ -25,6 +29,10 @@ window.onload = function () {
   var mySwiper = new Swiper ('.swiper-container', {
     // Optional parameters
     direction: 'vertical',
-    loop: true
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false
+    }
   })
 };
