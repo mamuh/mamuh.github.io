@@ -11,6 +11,7 @@ var swiper = new Swiper('.swiper-container', {
     slideShadows: true,
   },
   loop: true,
+  mousewheel: true,
   autoplay: {
     delay: 2500,
     disableOnInteraction: false
