@@ -1,17 +1,10 @@
 body {
-  background-color: #1D1D1D;
+  background-color: #0E0F0D;
   margin: 0 auto;
   box-sizing: border-box;
   color: white;
   font-family: 'Roboto Slab', serif;
 }
-
-
-.swiper-container {
-    width: 600px;
-    height: 300px;
-}
-
 
 .banner {
   background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../images/bg3.jpg');
@@ -25,7 +18,7 @@ body {
 margin: 0;
 color: white;
 text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-font-size: 32px;
+font-size: 3em;
 font-weight: bold;
 }
 
@@ -37,9 +30,9 @@ font-weight: bold;
 }
 
 .work {
+  width: 75%;
   margin: 0 auto;
 }
-
 
 
 @media (max-width: 600px) {
