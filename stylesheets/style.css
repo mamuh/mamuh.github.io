@@ -7,10 +7,18 @@ body {
 }
 
 
+.swiper-container {
+    width: 600px;
+    height: 300px;
+}
+
+
 .banner {
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../images/bg3.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: right bottom;
   padding: 10%;
+  height: 40vh;
 }
 
 .banner h1 {
