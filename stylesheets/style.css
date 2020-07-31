@@ -3,35 +3,127 @@ body {
   margin: 0 auto;
   box-sizing: border-box;
   color: white;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 200;
+}
+
+#name {
+  font-size: 55px;
+  margin: 0;
+  opacity: 0.8;
+}
+
+#title {
+  font-size: 35px;
+  margin: 0;
+  opacity: 0.75;
+  margin-top: 7px;
+}
+
+#headline {
+  font-size: 22px;
+  opacity: 0.6;
 }
 
 .banner {
-  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../images/bg3.jpg');
+  /*background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../images/bg3.jpg');*/
   background-size: cover;
   background-position: right bottom;
   padding: 10%;
   height: 40vh;
 }
 
-.banner h1 {
-margin: 0;
-color: white;
-text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-font-size: 3em;
-font-weight: bold;
+.top-buttons {
+  position: absolute;
+  margin-top: 10px;
 }
 
-.banner p {
-  font-size: 20px;
+.banner-button {
+  border: 1px solid white;
+  background-color: transparent;
+  padding: 10px 10px 8px 10px;
   color: white;
-  opacity: .7;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  text-decoration: none;
+  margin: 15px 10px 0 0;
 }
+
+.banner-button:hover {
+  cursor: pointer;
+  background-color: black;
+}
+
+.about-me {
+  left: 20%;
+}
+
+.see-work {
+  left: 0;
+}
+
 
 .work {
   width: 75%;
   margin: 0 auto;
+}
+
+html, body{
+  width:100%;
+  height:100%;
+  padding:0px;
+  margin:0px;
+  overflow: hidden;
+  background: #191d1e; /* Old browsers */
+  background: -moz-linear-gradient(0deg,  #191d1e 50%, #283139 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(50%,#191d1e), color-stop(100%,#283139)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(0deg,  #191d1e 50%,#283139 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(0deg,  #191d1e 50%,#283139 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(0deg,  #191d1e 50%,#283139 100%); /* IE10+ */
+  background: linear-gradient(0deg,  #191d1e 50%,#283139 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#191d1e', endColorstr='#283139',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background-attachment: fixed
+}
+
+#projector {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width:100%;
+  height:78vh;
+}
+
+.center-div {
+  width:580px;
+    height:374px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-left: -290px;
+    margin-top:  -187px;
+}
+
+#preloaderDiv
+{
+  position:absolute;
+  left:50%;
+    top:50%;
+    margin-left: -27px;
+    margin-top:  -27px;
+}
+
+#logo{
+  opacity:0;
+    filter: alpha(opacity=0);
+}
+
+#date2014
+{
+  position:absolute;
+  padding-left: 210px;
+  padding-top:15px;
+  opacity:0;
+  top:303px;
+  left:0;
+    filter: alpha(opacity=0);
 }
 
 

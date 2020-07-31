@@ -4,105 +4,39 @@
     <title>Mariana</title>
 
     <link rel="stylesheet" type="text/css" href="./stylesheets/style.css">
-    <link rel="stylesheet" type="text/css" href="./stylesheets/swiper.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
-    <link rel="stylesheet" href="path/to/swiper.min.css">
+
     <link rel="icon" type="image/png" href="/images/ruby.png"/>
     <link rel="icon" type="image/png" href="https://mariana.dev/images/ruby.png"/>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;700&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
 
-
-  <style>
-   .swiper-container {
-      width: 100%;
-      padding-top: 50px;
-      padding-bottom: 70px;
-    }
-
-    .swiper-slide {
-      background-position: center;
-      background-size: cover;
-      width: 300px;
-      height: 250px;
-      text-align: center;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-    }
-
-    .swiper-slide:hover {
-      background-color: #1D9B8D;
-      cursor: grab;
-    }
-
-    .swiper-slide:active {
-      background-color: #1D9B8D;
-      cursor: grabbing;
-    }
-
-    .swiper-pagination-bullet {
-      width: 20px;
-      height: 20px;
-      text-align: center;
-      line-height: 20px;
-      font-size: 12px;
-      color: white;
-      opacity: 1;
-      background: rgba(0, 0, 0, 0.2);
-    }
-
-    .swiper-pagination-bullet-active {
-      color: #1d1d1d;
-      background: white;
-    }
-  </style>
-
-
-
   <body>
 
-    <nav>
+    <canvas id="projector"></canvas>
 
-    </nav>
 
     <div class="banner">
-      <h1>Mariana Caramori</h1>
-      <p>Full stack developer - London/UK</p>
+      <p id="name">Mariana Caramori,</p>
+      <p id="title">Full Stack Developer - London/UK</p>
+      <p id="headline">I build amazing experiences</p>
+      <div class="top-buttons">
+        <a class="banner-button" id="see-work" href="#">SEE MY WORK</a>
+        <a class="banner-button" id="about-me" href="#">ABOUT ME</a>
+      </div>
     </div>
-
     <div class="work">
       <strong>My work</strong>
-
-      <!-- Swiper -->
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide" style="background-image:url(./images/bg.jpeg)">1</div>
-            <div class="swiper-slide" style="background-image:url(./images/london.jpg)">2</div>
-            <div class="swiper-slide" style="background-image:url(./images/pets.jpg)">3</div>
-            <div class="swiper-slide" style="background-image:url(./images/profile.png)">4</div>
-            <div class="swiper-slide" style="background-image:url(./images/game.jpg)">5</div>
-            <div class="swiper-slide" style="background-image:url(./images/nature-6.jpg)">6</div>
-          </div>
-          <!-- Add Pagination -->
-          <div class="swiper-pagination"></div>
-        </div>
-
-
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+    <script type="text/javascript" src="javascript/script.js"></script>
 
-    <script src="./javascript/script.js"></script>
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-    <script src="path/to/swiper.min.js"></script>
-    <script src="../package/swiper-bundle.min.js"></script>
-    <script src="javascript/swiper.js"></script>
+
 
   </body>
 </html>
