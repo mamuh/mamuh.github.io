@@ -8,27 +8,24 @@ body {
 }
 
 #name {
-  font-size: 55px;
+  font-size: 3.8em;
   margin: 0;
   opacity: 0.8;
 }
 
 #title {
-  font-size: 35px;
+  font-size: 2.5em;
   margin: 0;
   opacity: 0.75;
   margin-top: 7px;
 }
 
 #headline {
-  font-size: 22px;
+  font-size: 1.5em;
   opacity: 0.6;
 }
 
 .banner {
-  /*background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../images/bg3.jpg');*/
-  /*background-size: cover;*/
-  /*background-position: right bottom;*/
   padding: 10%;
   height: 40vh;
 }
@@ -41,10 +38,11 @@ body {
 .banner-button {
   border: 1px solid white;
   background-color: transparent;
-  padding: 10px 10px 8px 10px;
+  padding: 12px 20px 10px 20px;
   color: white;
   text-decoration: none;
   margin: 15px 10px 0 0;
+  font-size: 14px;
 }
 
 .banner-button:hover {
@@ -131,8 +129,28 @@ html, body{
     filter: alpha(opacity=0);
 }
 
+.transition-fade {
+  transition: 0.4s;
+  opacity: 1;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
+}
+
 
 @media (max-width: 600px) {
   /* For a screen < 400px, this CSS will be read */
+  #name {
+    font-size: 3.5em;
+  }
+
+  #title {
+    font-size: 1.5em;
+  }
+
+  #headline {
+    font-size: 1.3em;
+  }
 
 }

@@ -4,9 +4,9 @@
     <title>Mariana</title>
 
     <link rel="stylesheet" type="text/css" href="./stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/text.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
 
-    <link rel="icon" type="image/png" href="/images/ruby.png"/>
     <link rel="icon" type="image/png" href="https://mariana.dev/images/ruby.png"/>
 
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
     <canvas id="projector"></canvas>
 
 
-    <div class="banner">
+    <div class="banner transition-fade" id="swup">
       <p id="name">Mariana Caramori,</p>
       <p id="title">Full Stack Developer - London/UK</p>
       <p id="headline">I build amazing experiences</p>
@@ -29,7 +29,21 @@
       </div>
     </div>
     <div class="work">
-     <p id="my-work">My work</p>
+      <div id="test">
+        <p id="my-work">My work</p>
+      </div>
+
+     <!--  <main id="swup" class="transition-fade">
+            <h1>This is homepage</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua.
+            </p>
+            <a href="/someOtherPage">Go to other page</a>
+          </main> -->
+
+
+
      <div>
        <img src="./images/pets.jpg" width="200">
        <img src="./images/pets.jpg" width="200">
@@ -46,6 +60,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
     <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
     <script type="text/javascript" src="javascript/script.js"></script>
+    <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+    <script defer type="text/javascript" src="javascript/swup.js"></script>
 
 
 
