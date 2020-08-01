@@ -143,14 +143,17 @@ html.is-animating .transition-fade {
   /* For a screen < 400px, this CSS will be read */
   #name {
     font-size: 3.5em;
+    opacity: 1;
   }
 
   #title {
     font-size: 1.5em;
+    opacity: 1;
   }
 
   #headline {
     font-size: 1.3em;
+    opacity: 0.9;
   }
 
 }
