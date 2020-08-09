@@ -71,10 +71,9 @@ body {
 .portfolio {
   width: 80%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
   padding-left: 10%;
-  margin: 0 auto;
   margin-bottom: 30px;
 }
 
@@ -157,7 +156,7 @@ html.is-animating .transition-fade {
 
 
 .swiper-container {
-  width: 70%;
+  width: 90%;
   padding-top: 50px;
   padding-bottom: 30px !important;
 }

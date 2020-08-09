@@ -56,19 +56,19 @@
         </a> -->
 
         <!-- Slider main container -->
-        <div class="swiper-container">
+        <-- <div class="swiper-container">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide" style="background-image: url('./images/consulta.png'); background-size: cover; width: 350px; height: 230px;">
                 </div>
-                <div class="swiper-slide" style="background-image: url('./images/consulta.png'); background-size: cover; width: 350px; height: 230px;">
+                <div class="swiper-slide" style="background-image: url('./images/mars.png'); background-size: cover; width: 350px; height: 230px;">
                 </div>
-                <div class="swiper-slide" style="background-image: url('./images/consulta.png'); background-size: cover; width: 350px; height: 230px;">
+                <div class="swiper-slide" style="background-image: url('./images/geek.png'); background-size: cover; width: 350px; height: 230px;">
                 </div>
-                <div class="swiper-slide" style="background-image: url('./images/consulta.png'); background-size: cover; width: 350px; height: 230px;">
+                <div class="swiper-slide" style="background-image: url('./images/cocktail.png'); background-size: cover; width: 350px; height: 230px;">
                 </div>
-                <div class="swiper-slide" style="background-image: url('./images/consulta.png'); background-size: cover; width: 350px; height: 230px;">
+                <div class="swiper-slide" style="background-image: url('./images/gifs.png'); background-size: cover; width: 350px; height: 230px;">
                 </div>
 
             </div>
@@ -80,8 +80,8 @@
             <div class="swiper-button-next"></div> -->
 
             <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
-        </div>
+            <!-- <div class="swiper-scrollbar"></div> -->
+        </div> -->
       </div>
 
 
@@ -106,12 +106,12 @@
         effect: 'coverflow',
         grabCursor: true,
         centeredSlides: true,
-        slidesPerView: 'auto',
+        slidesPerView: 3,
         loop: true,
         mousewheel: true,
-        keyboard: {
-          enabled: true,
-        },
+        // keyboard: {
+        //   enabled: true,
+        // },
         coverflowEffect: {
           rotate: 50,
           stretch: 0,
@@ -123,10 +123,24 @@
           el: '.swiper-pagination',
           dynamicBullets: true,
         },
-        scrollbar: {
-          el: '.swiper-scrollbar',
-          hide: true,
-        },
+        breakpoints: {
+          '@0.00': {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          '@0.75': {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          '@1.00': {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          // '@1.50': {
+          //   slidesPerView: 4,
+          //   spaceBetween: 50,
+          // },
+        }
       });
     </script>
 
