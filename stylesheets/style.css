@@ -4,7 +4,7 @@ body {
   box-sizing: border-box;
   color: white;
   font-family: 'Josefin Sans', sans-serif;
-  font-weight: 200;
+  font-weight: lighter;
 }
 
 #name {
@@ -74,6 +74,8 @@ body {
   justify-content: flex-start;
   flex-wrap: wrap;
   padding-left: 10%;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .portfolio div {
@@ -154,7 +156,23 @@ html.is-animating .transition-fade {
 }
 
 
+.swiper-container {
+  width: 70%;
+  padding-top: 50px;
+  padding-bottom: 30px !important;
+}
 
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+
+}
+
+.swiper-pagination {
+  background-color: white;
+}
 
 
 
