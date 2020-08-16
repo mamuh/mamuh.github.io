@@ -22,7 +22,7 @@
     <canvas id="projector"></canvas>
 
     <div class="nav">
-      <div id="nav-close" style="color: white;"><i class="fas fa-times"></i></div>
+      <div id="nav-close1" style="color: white;"><i class="fas fa-times"></i></div>
       <ul>
         <a href="https://www.unaconsulta.com.br/" target="_blank"><li>1CONSULTA</li></a>
         <a href="https://geek-inventory.herokuapp.com/" target="_blank"><li>GEEK INVENTORY</li></a>
@@ -30,10 +30,22 @@
         <a href="https://mars-rovers-command.herokuapp.com/" target="_blank"><li>MARS ROVERS</li></a>
         <a href="https://slack-redux-react.herokuapp.com/" target="_blank"><li>SLACK CLONE</li></a>
       <div class="banner-buttons">
-        <a class="banner-button button" href="#" id="back-home">BACK TO HOME</a>
-        <a class="banner-button button" href="#" id="about-me">ABOUT ME</a>
+        <a class="banner-button button" href="#" id="back-home2">BACK TO HOME</a>
+        <a class="banner-button button" href="#" id="about-me2">ABOUT ME</a>
       </div>
       </ul>
+    </div>
+
+    <div class="about">
+      <div id="nav-close2" style="color: white;"><i class="fas fa-times"></i></div>
+      <p>
+        Full Stack Web Developer
+      </p>
+
+      <div class="banner-buttons">
+        <a class="banner-button button" href="#" id="back-home3">BACK TO HOME</a>
+        <a class="banner-button button" href="#" id="see-work3">SEE MY WORK</a>
+      </div>
     </div>
 
 
@@ -43,8 +55,8 @@
       <p id="title">Full Stack Developer</p>
       <p id="headline">Based in London/UK</p>
       <div class="top-buttons">
-        <a class="banner-button button" id="see-work" href="#">SEE MY WORK</a>
-        <a class="banner-button button" id="about-me" href="#">ABOUT ME</a>
+        <a class="banner-button button" id="see-work1" href="#">SEE MY WORK</a>
+        <a class="banner-button button" id="about-me1" href="#">ABOUT ME</a>
       </div>
       </header>
     </div>
@@ -60,11 +72,9 @@
    crossorigin="anonymous"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
     <script type="text/javascript" src="javascript/script.js"></script>
-    <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
-    <script defer type="text/javascript" src="javascript/swup.js"></script>
+
 
     <script>
       // function to open/close nav
@@ -94,12 +104,12 @@
         }
       }
 
-      // when clicking + or ☰ .button
-      $("#see-work").click(function(){
+      // ae my work
+      $("#see-work1, #see-work3").click(function(){
         // when clicking ☰ .button, open nav
         if($("header").hasClass("open")){
           toggleNav();
-          $('header').hide()
+          $('header, .about').hide()
         }
         // when clicking + .button, open header
         else{
@@ -108,15 +118,33 @@
       });
 
       // close nav
-      $("#nav-close").click(function(){
+      $("#nav-close1, #nav-close2").click(function(){
+        $('.nav, .about').hide()
+        $('header').show()
+      });
+
+      $("#back-home1, #back-home2, #back-home3").click(function(){
         toggleNav();
         $('header').show()
       });
 
-      $("#back-home").click(function(){
-        toggleNav();
-        $('header').show()
+      // about
+      $("#about-me1, #about-me2").click(function(){
+        // when clicking ☰ .button, open nav
+        if($("header").hasClass("open")){
+          toggleAbout();
+          $('header').hide()
+          $('.nav').hide()
+        }
+        // when clicking + .button, open header
+        else{
+          $("header").addClass("open");
+        }
       });
+
+
+
+
 
       // // scroll to sections
       // $(".nav li").click(function(){
