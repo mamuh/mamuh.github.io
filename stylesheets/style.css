@@ -380,6 +380,10 @@ header{
       }
     }
 
+a {
+  text-decoration: none;
+}
+
 
 #nav-close{
   position:fixed;
