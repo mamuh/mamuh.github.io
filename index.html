@@ -81,6 +81,19 @@
         }
       }
 
+      function toggleAbout(){
+        // if nav is open, close it
+        if($(".about").is(":visible")){
+          $(".about").fadeOut();
+          $(".button").removeClass("menu");
+        }
+        // if .nav is closed, open it
+        else{
+          $(".button").addClass("menu");
+          $(".about").fadeIn().css('display', 'flex');
+        }
+      }
+
       // when clicking + or ☰ .button
       $("#see-work").click(function(){
         // when clicking ☰ .button, open nav
@@ -96,6 +109,11 @@
 
       // close nav
       $("#nav-close").click(function(){
+        toggleNav();
+        $('header').show()
+      });
+
+      $("#back-home").click(function(){
         toggleNav();
         $('header').show()
       });
