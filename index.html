@@ -129,7 +129,7 @@
         // when clicking ☰ .button, open nav
         if($("header").hasClass("open")){
           toggleNav();
-          $('header, .about').hide()
+          $('header, .about').fadeOut();
         }
         // when clicking + .button, open header
         else{
@@ -144,9 +144,9 @@
       });
 
       $("#back-home1, #back-home2, #back-home3").click(function(){
-        $('.nav').hide()
-        $('.about').hide()
-        $('header').show()
+        $('.nav').fadeOut();
+        $('.about').fadeOut();
+        $('header').fadeIn()
       });
 
       // about
@@ -154,8 +154,8 @@
         // when clicking ☰ .button, open nav
         if($("header").hasClass("open")){
           toggleAbout();
-          $('header').hide()
-          $('.nav').hide()
+          $('header').fadeOut();
+          $('.nav').fadeOut();
         }
         // when clicking + .button, open header
         else{
