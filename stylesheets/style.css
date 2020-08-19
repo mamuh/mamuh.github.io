@@ -378,15 +378,15 @@ header{
       font-family: 'Montserrat', sans-serif;
       font-weight:700;
       text-transform:uppercase;
-      line-height:2;
-      letter-spacing:1pt;
-      font-size:2em;
+      line-height: 2;
+      letter-spacing: 1pt;
+      font-size: 2em;
       color:white;
-      animation:fadeDown .5s forwards;
-      opacity:0;
+      animation: fadeDown .5s forwards;
+      opacity: 0;
       cursor:pointer;
-      transform:translateY(-20px);
-      transition:all .3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+      transform: translateY(-20px);
+      transition: all .3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
       border: 2px solid white;
   }
 
@@ -452,6 +452,10 @@ a {
   background-repeat: no-repeat;
   background-size: 0 1px, 0 100%, 0% 1px;
   background-position: top center, top center, bottom center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .project:hover {
