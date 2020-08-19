@@ -485,5 +485,17 @@ a {
     }
 }
 
+.project img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.project img:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
 
 
