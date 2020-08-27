@@ -43,6 +43,17 @@ h1 {
   top: -120px;
   width: 300px;
 }
+.project h3 {
+  color: white;
+  background-color: #1C2124;
+  padding: 5px 10px;
+  font-weight: 400;
+  border-radius: 1px;
+}
+
+.project img {
+  border-radius: 2px;
+}
 
 #one {
   grid-row: 1 / 6;
@@ -69,19 +80,6 @@ h1 {
   grid-column: 1;
 }
 
-#name {
-  font-size: 3.8em;
-  margin: 0;
-  opacity: 0.8;
-}
-
-#title {
-  font-size: 2.5em;
-  margin: 0;
-  opacity: 0.8;
-  margin-top: 7px;
-}
-
 .about-me {
   background-color: #292f33;
   padding: 40px;
@@ -92,6 +90,7 @@ h1 {
   margin-left: -250px;
   font-size: 25px;
   height: 40%;
+  border-radius: 3px;
 }
 
 .about {
@@ -273,4 +272,7 @@ video {
 .overlay-nav img {
  width: 60px;
  height: 50px;
+ position: sticky;
+ position: -webkit-sticky; /* Safari */
+ top: 0;
 }
