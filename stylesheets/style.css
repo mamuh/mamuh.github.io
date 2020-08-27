@@ -22,9 +22,25 @@ h1 {
 }
 
 .projects {
+  background-color: #e8e8e8;
+  width: 70vw;
   display: grid;
-  grid-template-columns: repeat(2, 400px);
-  grid-template-rows: repeat(10,130px);
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(15,90px);
+  color: #4F4F4F;
+  justify-items: center;
+  position: relative;
+}
+
+.projects-container {
+  background-color: #e8e8e8;
+  display: flex;
+  justify-content: center;
+}
+
+.project {
+  position: inherit;
+  top: -150px;
 }
 
 #one {
@@ -33,17 +49,17 @@ h1 {
 }
 
 #two {
-  grid-row: 2 / 5;
+  grid-row: 2 / 4;
   grid-column: 2;
 }
 
 #three {
-  grid-row: 6 / 8;
+  grid-row: 8 / 10;
   grid-column: 1;
 }
 
 #four {
-  grid-row: 7 / 10;
+  grid-row: 10 / 12;
   grid-column: 2;
 }
 
@@ -60,36 +76,6 @@ h1 {
   margin-top: 7px;
 }
 
-#headline {
-  font-size: 1.5em;
-  opacity: 0.75;
-}
-
-.banner {
-  padding-top: 14%;
-  height: 40vh;
-}
-
-.top-buttons {
-  position: absolute;
-  margin-top: 10px;
-}
-
-.banner-button {
-  border: 1px solid white;
-  background-color: transparent;
-  padding: 12px 20px 10px 20px;
-  color: white;
-  text-decoration: none;
-  margin: 15px 10px 0 0;
-  font-size: 14px;
-}
-
-.banner-button:hover {
-  cursor: pointer;
-  background-color: black;
-}
-
 .about-me {
   background-color: #343738;
   padding: 40px;
@@ -98,7 +84,8 @@ h1 {
   top: 120px;
   left: 50%;
   margin-left: -250px;
-  font-size: 20px;
+  font-size: 25px;
+  height: 60%;
 }
 
 .about {
@@ -107,6 +94,7 @@ h1 {
   margin: 0 auto;
   position: relative;
   padding: 30px 0;
+  height: 90vh;
 }
 
 .see-work {
