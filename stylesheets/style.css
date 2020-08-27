@@ -1,11 +1,11 @@
 body {
-  background-color: #0E0F0D;
+  background-color: #323630;
   box-sizing: border-box;
   color: white;
   font-size: 19px;
 }
 
-p {
+p, li {
   font-family: 'Assistant', sans-serif;
 }
 
@@ -19,6 +19,32 @@ h1 {
 
 .video-container p {
   color: #4F4F4F;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  grid-template-rows: repeat(10,130px);
+}
+
+#one {
+  grid-row: 1 / 3;
+  grid-column: 1;
+}
+
+#two {
+  grid-row: 2 / 5;
+  grid-column: 2;
+}
+
+#three {
+  grid-row: 6 / 8;
+  grid-column: 1;
+}
+
+#four {
+  grid-row: 7 / 10;
+  grid-column: 2;
 }
 
 #name {
@@ -65,7 +91,22 @@ h1 {
 }
 
 .about-me {
-  left: 20%;
+  background-color: #343738;
+  padding: 40px;
+  width: 500px;
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  margin-left: -250px;
+  font-size: 20px;
+}
+
+.about {
+  text-align: center;
+  width: 100vw;
+  margin: 0 auto;
+  position: relative;
+  padding: 30px 0;
 }
 
 .see-work {
@@ -361,20 +402,6 @@ header{
   background-color: rgba(0,0,0,0.3)
 }
 
-.about {
-  position: absolute;
-  width:100%;
-  height:100%;
-  top:0;
-  left:0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  display: none;
-  background-color: rgba(0,0,0,0.3)
-}
-
 .nav ul {
   list-style:none;
   padding: 0;
@@ -453,54 +480,7 @@ a {
 
 
 
-.project
-{
-  /*width: 300px;*/
-  margin: 0 auto;
-  padding: 1px;
-  background-color: transparent; /* gold */
-  background-image:
-    url('data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='),
-    url('data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='),
-    url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAFBlWElmTU0AKgAAAAgAAgESAAMAAAABAAEAAIdpAAQAAAABAAAAJgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADr/7PgAAABWWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS40LjAiPgogICA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgogICAgICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgICAgICAgICB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyI+CiAgICAgICAgIDx0aWZmOk9yaWVudGF0aW9uPjE8L3RpZmY6T3JpZW50YXRpb24+CiAgICAgIDwvcmRmOkRlc2NyaXB0aW9uPgogICA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgpMwidZAAAADUlEQVQIHWNgYGD4DwABBAEAHnOcQAAAAABJRU5ErkJggg==');
-  background-repeat: no-repeat;
-  background-size: 0 1px, 0 100%, 0% 1px;
-  background-position: top center, top center, bottom center;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  margin-bottom: 10px;
-  width
-}
-
-.project:hover {
-  -webkit-animation: drawBorderFromCenter 0.7s;
-  -webkit-animation-fill-mode: forwards;
-}
-
-/* Chrome, Safari, Opera */
-@-webkit-keyframes drawBorderFromCenter {
-    0% {
-      background-size: 0 1px, 0 0, 100% 100%;
-      /* background-color: white; */
-    }
-    15% {
-      background-size: 100% 1px, 100% 0, 100% 100%;
-      /* background-color: white; */
-    }
-    70%
-    {
-      background-size: 100% 1px, 100% 98%, 100% 100%;
-      /* background-color: white; */
-    }
-    100%
-    {
-      background-size: 100% 1px, 100% 98%, 0 1px;
-      background-color: white;
-    }
-}
-
-.project img {
+/*.project img {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   -webkit-transition: .3s ease-in-out;
@@ -513,7 +493,7 @@ a {
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
   cursor: pointer;
-}
+}*/
 
 
 
@@ -565,4 +545,37 @@ video {
   margin-left: -250px;
   margin-top: -100px;
   z-index:1;
+}
+
+.overlay-nav {
+  width: 95%;
+  padding-top: 20px;
+  position:absolute;
+  z-index:1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.overlay-nav li {
+  list-style: none;
+  display: inline;
+  margin-left: 30px;
+  color: #4F4F4F;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.overlay-nav a {
+  cursor: pointer;
+  color: #4F4F4F;
+}
+
+.overlay-nav a:hover {
+  cursor: pointer;
+  color: #4F4F4F;
+}
+
+.overlay-nav img {
+ width: 60px;
+ height: 50px;
 }
