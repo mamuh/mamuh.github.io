@@ -83,7 +83,7 @@ h1 {
 }
 
 .about-me {
-  background-color: #343738;
+  background-color: #292f33;
   padding: 40px;
   width: 500px;
   position: absolute;
@@ -112,7 +112,7 @@ h1 {
 #img-2 {
   position: absolute;
   top: 400px;
-  left: 400px;
+  left: 300px;
 }
 
 #img-3 {
