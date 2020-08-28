@@ -41,8 +41,30 @@
 
       </div>
       <div class="overlay">
-        <h1>Mariana Caramori</h1>
-        <p>Software Developer</p>
+        <div class="welcome-section content-hidden">
+          <div class="content-wrap">
+            <ul class="fly-in-text">
+              <li>M</li>
+              <li>A</li>
+              <li>R</li>
+              <li>I</li>
+              <li>A</li>
+              <li>N</li>
+              <li>A</li>
+            </ul>
+            <p class="enter-button">Software Developer</p>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
       </div>
     </div>
 
@@ -144,6 +166,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
     <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
     <script type="text/javascript" src="javascript/script.js"></script>
+
+    <script type="text/javascript">
+      $(function() {
+        var welcome = $('.welcome-section');
+        setTimeout(function() {
+          welcome.removeClass('content-hidden');
+        }, 800)
+      })
+    </script>
 
   </body>
 </html>
