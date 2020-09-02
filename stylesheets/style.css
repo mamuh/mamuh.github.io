@@ -47,7 +47,7 @@ h1 {
 .project {
   position: inherit;
   top: -60px;
-  width: 300px;
+  width: 320px;
 }
 
 .project h3 {
@@ -129,7 +129,7 @@ h1 {
   position: relative;
   background-color: #191D1E;
   height: 100vh;
-  margin-bottom: 310px;
+  margin-bottom: 380px;
 }
 
 #profile {
@@ -173,6 +173,7 @@ h1 {
 
 .contact {
   background-color: #1B2022;
+  background-image: url(https://i.pinimg.com/originals/ea/3f/d3/ea3fd3102ccf575e3c33954f73eab78d.jpg);
   padding: 30px 0;
   display: flex;
   justify-content: center;
