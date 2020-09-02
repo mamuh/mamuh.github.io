@@ -40,7 +40,7 @@ h1 {
 
 .project {
   position: inherit;
-  top: -120px;
+  top: -100px;
   width: 300px;
 }
 .project h3 {
@@ -87,44 +87,62 @@ h1 {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  transform: translate(-50%, -50%);
   font-size: 25px;
-  height: 40%;
+  /*height: 50%;*/
   border-radius: 3px;
   font-family: 'Assistant', sans-serif;
 }
 
+.about-me p {
+  margin: 0;
+  text-align: justify;
+  line-height: 1.2em;
+}
+
 .about {
-  text-align: center;
   width: 100vw;
-  margin: 0 auto;
   position: relative;
   /*padding: 30px 0;*/
   height: 100vh;
 }
 
+#profile {
+  float: right;
+  margin-left: 45px;
+  object-fit: cover;
+  border-radius: 50%;
+  shape-outside: circle();
+  -webkit-filter: grayscale(50%);
+  filter: grayscale(50%);
+}
+
 #img-1 {
   position: absolute;
-  top: 50px;
-  left: 200px;
+  top: -50px;
+  left: -200px;
+  opacity: 0.6;
 }
 
 #img-2 {
   position: absolute;
-  top: 400px;
-  left: 300px;
+  top: 240px;
+  left: -130px;
+  opacity: 0.6;
 }
 
 #img-3 {
   position: absolute;
   top: 70px;
-  right: 150px;
+  right: -150px;
+  opacity: 0.6;
 }
 
 #img-4 {
   position: absolute;
   top: 350px;
-  right: 200px;
+  right: -200px;
+  opacity: 0.6;
 }
 
 
@@ -319,7 +337,7 @@ video {
   font-size: 1em;
   opacity: 1;
   margin-top: 30px;
-  transition: all 1s ease 2s;
+  transition: all 1s ease 1s;
 }
 
 .content-hidden .fly-in-text li { opacity: 0; }
@@ -332,3 +350,4 @@ video {
 .content-hidden .fly-in-text li:nth-child(7) { transform: translate3d(-90px, 0, 0); }
 
 .content-hidden .enter-button { opacity: 0; transform: translate3d(0, -30px, 0); }
+
