@@ -10,6 +10,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
     />
 
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
 
     <link rel="icon" type="image/png" href="https://mariana.dev/images/ruby.png"/>
@@ -97,7 +100,7 @@
     <div class="projects-container" id="my-projects">
       <div class="projects">
 
-        <div class="project" id="one">
+        <div class="project" id="one" data-aos="fade-right">
           <a href="https://www.unaconsulta.com.br/" target="_blank"><img src="./images/consultaa.png" alt="" width="300" height="400">
           <h3>1CONSULT</h3></a>
           <p>
@@ -106,7 +109,7 @@
           <p>Stack: Ruby on Rails, JavaScript, HTML5, SCSS</p>
         </div>
 
-        <div class="project" id="two">
+        <div class="project" id="two" data-aos="fade-left">
           <a href="https://geek-inventory.herokuapp.com/" target="_blank"><img src="./images/geekk.png" alt="" width="300" height="400">
           <h3>GEEK INVENTORY</h3></a>
           <p>
@@ -116,7 +119,7 @@
         </div>
 
 
-        <div class="project" id="three">
+        <div class="project" id="three" data-aos="fade-up">
           <a href="https://mister-cocktail-mamuh.herokuapp.com/" target="_blank"><img src="./images/mrc.png" alt="" width="300" height="400">
           <h3>MR COCKTAIL</h3></a>
           <p>
@@ -125,7 +128,7 @@
           <p>Stack: Ruby on Rails, JavaScript, HTML5, SCSS</p>
         </div>
 
-        <div class="project" id="four">
+        <div class="project" id="four" data-aos="fade-left">
           <a href="https://mars-rovers-command.herokuapp.com/" target="_blank"><img src="./images/marss.png" alt="" width="300" height="400">
           <h3>MARS ROVERS</h3></a>
           <p>
@@ -134,7 +137,7 @@
           <p>Stack: React, Redux, Axios, HTML5, SCSS</p>
         </div>
 
-        <div class="project" id="five">
+        <div class="project" id="five" data-aos="fade-right">
           <a href="https://slack-redux-react.herokuapp.com/" target="_blank"><img src="./images/port.png" alt="" width="300" height="400">
           <h3>SLACK CLONE</h3></a>
           <p>
@@ -143,7 +146,7 @@
           <p>Stack: React, Redux, HTML5, SCSS</p>
         </div>
 
-        <div class="project" id="six">
+        <div class="project" id="six" data-aos="fade-left">
           <a href="https://gifs-react.herokuapp.com/"><img src="./images/pikachu.png" alt="" width="300" height="400">
           <h3>REACT GIFS</h3></a>
           <p>
@@ -194,6 +197,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
     <script type="text/javascript">
       $(function() {
         var welcome = $('.welcome-section');
@@ -216,6 +224,12 @@
           }
         });
 
+        // var controller2 = new ScrollMagic.Controller({
+        //   globalSceneOptions: {
+        //     duration: 100
+        //   }
+        // });
+
         // get all slides
         var slides = document.querySelectorAll(".panel");
 
@@ -228,6 +242,23 @@
             .addIndicators() // add indicators (requires plugin)
             .addTo(controller);
         }
+
+        // new ScrollMagic.Scene({triggerElement: "#my-projects"})
+        //         .setClassToggle("#img-one", "animate__slideInLeft") // add class toggle
+        //         .addIndicators() // add indicators (requires plugin)
+        //         .addTo(controller2);
+        // new ScrollMagic.Scene({triggerElement: "#animate__slideInRight"})
+        //         .setClassToggle("#two", "active") // add class toggle
+        //         .addIndicators() // add indicators (requires plugin)
+        //         .addTo(controller2);
+        // new ScrollMagic.Scene({triggerElement: "#sec3"})
+        //         .setClassToggle("#high3", "active") // add class toggle
+        //         .addIndicators() // add indicators (requires plugin)
+        //         .addTo(controller2);
+        // new ScrollMagic.Scene({triggerElement: "#sec4"})
+        //         .setClassToggle("#high4", "active") // add class toggle
+        //         .addIndicators() // add indicators (requires plugin)
+        //         .addTo(controller2);
       });
     </script>
 
