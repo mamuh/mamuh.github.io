@@ -5,7 +5,10 @@
 
     <link rel="stylesheet" type="text/css" href="./stylesheets/style.css">
 
-    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
 
@@ -19,6 +22,7 @@
 
 
   <body>
+    <section class="panel">
 
     <div class="video-container">
       <video autoplay muted loop>
@@ -26,16 +30,16 @@
       </video>
       <div class="overlay-nav">
 
-          <img src="./images/mc.png">
+          <img src="./images/mc.png" class="animate__animated animate__slideInLeft">
           <ul>
             <li>
-              <a href="#about-me">About</a>
+              <a href="#about" class="hvr-underline-from-left">About</a>
             </li>
             <li>
-              <a href="#my-projects">Projects</a>
+              <a href="#my-projects" class="hvr-underline-from-left">Projects</a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a href="#contact" class="hvr-underline-from-left">Contact</a>
             </li>
           </ul>
 
@@ -56,30 +60,26 @@
           </div>
         </div>
 
-
-
-
-
-
-
-
-
-
       </div>
     </div>
 
-    <div class="about">
+    </section>
+
+
+    <section class="panel">
+    <div class="about" id="about">
 
       <div class="about-me" id="about-me">
         <img src="./images/profile2.png" alt="" width="130" height="130" id="profile">
         <p>
           I'm a Full Stack Web Developer based in London/UK.
-          I used to code as a hobby since 2018, when I was still working as a QA tester for a Fintech Company.
-          I've decided to switch careers in 2020 and graduated at Le Wagon Bootcamp, where I've learned how
-          to build professional applications with appealing design. Below you will find some of the projects I've built so far.
+          I've started coding as a hobby in 2018, when I was still working as a QA tester for a Fintech Company.
+          I've decided to switch careers in 2020 and graduated at Le Wagon Bootcamp, where I've learned
+          to build professional applications with appealing design.
+
+          Below you will find some of the projects I've built so far.
 
         </p>
-
 
         <img src="./images/rubyy.png" alt="" width="100" id="img-1">
         <img src="./images/react.png" alt="" width="160" id="img-2">
@@ -88,12 +88,17 @@
       </div>
 
     </div>
+    </section>
+
+
+
+
 
     <div class="projects-container" id="my-projects">
       <div class="projects">
 
         <div class="project" id="one">
-          <a href="https://www.unaconsulta.com.br/"><img src="./images/consultaa.png" alt="" width="300" height="400">
+          <a href="https://www.unaconsulta.com.br/" target="_blank"><img src="./images/consultaa.png" alt="" width="300" height="400">
           <h3>1CONSULT</h3></a>
           <p>
             Property reviews app where you can search for an address and review the property you've lived in or read previous reviews to decide wherther it's a good place to move in or not.
@@ -139,8 +144,8 @@
         </div>
 
         <div class="project" id="six">
-          <img src="./images/port.png" alt="" width="300" height="400">
-          <h3>REACT GIFS</h3>
+          <a href="https://gifs-react.herokuapp.com/"><img src="./images/pikachu.png" alt="" width="300" height="400">
+          <h3>REACT GIFS</h3></a>
           <p>
             Single page appliacation that uses Giphy's API to search for GIFs and displays a list of them to be selected.
           </p>
@@ -148,6 +153,10 @@
         </div>
       </div>
     </div>
+
+
+
+    <section class="panel">
 
     <div class="contact" id="contact">
       <div class="contact-container">
@@ -163,6 +172,7 @@
       </div>
     </div>
 
+    </section>
 
 
 
@@ -179,8 +189,10 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
-    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-    <script type="text/javascript" src="javascript/script.js"></script>
+    <!-- <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script> -->
+    <!-- <script type="text/javascript" src="javascript/script.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 
     <script type="text/javascript">
       $(function() {
@@ -189,6 +201,34 @@
           welcome.removeClass('content-hidden');
         }, 800)
       })
+    </script>
+
+
+    <script>
+      $(function () { // wait for document ready
+        // init
+        var controller = new ScrollMagic.Controller({
+          globalSceneOptions: {
+            triggerHook: 'onLeave',
+            duration: 0 // this works just fine with duration 0 as well
+            // However with large numbers (>20) of pinned sections display errors can occur so every section should be unpinned once it's covered by the next section.
+            // Normally 100% would work for this, but here 200% is used, as Panel 3 is shown for more than 100% of scrollheight due to the pause.
+          }
+        });
+
+        // get all slides
+        var slides = document.querySelectorAll(".panel");
+
+        // create scene for every slide
+        for (var i=0; i<slides.length; i++) {
+          new ScrollMagic.Scene({
+              triggerElement: slides[i]
+            })
+            .setPin(slides[i], {pushFollowers: true})
+            .addIndicators() // add indicators (requires plugin)
+            .addTo(controller);
+        }
+      });
     </script>
 
   </body>

@@ -23,27 +23,33 @@ h1 {
 }
 
 .projects {
-  background-color: #e8e8e8;
-  width: 75vw;
+  width: 100vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(29,75px);
   color: #4F4F4F;
   justify-items: center;
   position: relative;
+  background-color: #E8E8E8;
 }
 
+
 .projects-container {
-  background-color: #e8e8e8;
+  background-color: #E8E8E8;
   display: flex;
   justify-content: center;
 }
+
+.panel {
+    width: 100%;
+  }
 
 .project {
   position: inherit;
   top: -60px;
   width: 300px;
 }
+
 .project h3 {
   color: white;
   font-family: 'Nanum Myeongjo', serif;
@@ -108,7 +114,6 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 20px;
-  /*height: 50%;*/
   border-radius: 3px;
   font-family: 'Assistant', sans-serif;
 }
@@ -122,8 +127,9 @@ h1 {
 .about {
   width: 100vw;
   position: relative;
-  /*padding: 30px 0;*/
+  background-color: #191D1E;
   height: 100vh;
+  margin-bottom: 310px;
 }
 
 #profile {
@@ -170,7 +176,7 @@ h1 {
   padding: 30px 0;
   display: flex;
   justify-content: center;
-  height: 300px;
+  height: 100vh;
 }
 
 .contact h1 {
@@ -214,6 +220,7 @@ html, body{
   background: linear-gradient(0deg,  #191d1e 50%,#283139 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#191d1e', endColorstr='#283139',GradientType=1 );
   background-attachment: fixed;
+  scroll-behavior: smooth;
 }
 
 
@@ -265,7 +272,7 @@ video {
 
 .overlay-nav {
   width: 95%;
-  padding-top: 20px;
+  padding-top: 40px;
   position:absolute;
   z-index:1;
   display: flex;
@@ -294,8 +301,7 @@ video {
 .overlay-nav img {
  width: 60px;
  height: 50px;
- position: sticky;
- position: -webkit-sticky; /* Safari */
+ margin-left: 40px;
  top: 0;
 }
 
@@ -375,3 +381,40 @@ video {
 
 .content-hidden .enter-button { opacity: 0; transform: translate3d(0, -30px, 0); }
 
+
+
+
+
+
+
+
+
+.hvr-underline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #4F4F4F;
+  height: 1px;
+  opacity: 0.7;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+  right: 0;
+}
