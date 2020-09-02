@@ -15,6 +15,7 @@ h1 {
   font-weight: 400;
   text-shadow: 2px 2px 4px rgba(0,0,0,0,3);
   color: #4F4F4F;
+  letter-spacing: 0.25em;
 }
 
 .video-container p {
@@ -45,6 +46,8 @@ h1 {
 }
 .project h3 {
   color: white;
+  font-family: 'Nanum Myeongjo', serif;
+  letter-spacing: 0.25em;
   background-color: #1C2124;
   padding: 5px 10px;
   font-weight: 400;
@@ -99,7 +102,7 @@ h1 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 25px;
+  font-size: 20px;
   /*height: 50%;*/
   border-radius: 3px;
   font-family: 'Assistant', sans-serif;
@@ -108,7 +111,7 @@ h1 {
 .about-me p {
   margin: 0;
   text-align: justify;
-  line-height: 1.2em;
+  line-height: 1.6em;
 }
 
 .about {
