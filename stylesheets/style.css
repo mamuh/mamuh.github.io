@@ -140,28 +140,28 @@ h1 {
   position: absolute;
   top: -50px;
   left: -200px;
-  opacity: 0.6;
+  opacity: 0.2;
 }
 
 #img-2 {
   position: absolute;
   top: 250px;
   left: -140px;
-  opacity: 0.6;
+  opacity: 0.2;
 }
 
 #img-3 {
   position: absolute;
   top: -60px;
   right: -70px;
-  opacity: 0.6;
+  opacity: 0.2;
 }
 
 #img-4 {
   position: absolute;
   top: 350px;
   right: -170px;
-  opacity: 0.6;
+  opacity: 0.2;
 }
 
 
