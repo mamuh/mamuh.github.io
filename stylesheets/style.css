@@ -51,11 +51,12 @@ h1 {
 }
 
 .project h3 {
-  color: white;
+  color: #4F4F4F;
+  /*color: white;*/
   font-family: 'Nanum Myeongjo', serif;
   letter-spacing: 0.25em;
-  background-color: #1C2124;
-  padding: 5px 10px;
+  /*background-color: #1C2124;*/
+  /*padding: 5px 10px;*/
   font-weight: 400;
   border-radius: 1px;
 }
@@ -129,7 +130,7 @@ h1 {
   position: relative;
   background-color: #191D1E;
   height: 100vh;
-  margin-bottom: 380px;
+  margin-bottom: 390px;
 }
 
 #profile {
@@ -165,15 +166,15 @@ h1 {
 
 #img-4 {
   position: absolute;
-  top: 350px;
-  right: -170px;
+  top: 300px;
+  right: -120px;
   opacity: 0.2;
 }
 
 
 .contact {
   background-color: #1B2022;
-  background-image: url(https://i.pinimg.com/originals/ea/3f/d3/ea3fd3102ccf575e3c33954f73eab78d.jpg);
+  background-image: url(https://fcit.usf.edu/matrix/wp-content/uploads/2019/03/CircuitBoard-K-Wide.jpg);
   padding: 30px 0;
   display: flex;
   justify-content: center;
@@ -191,12 +192,36 @@ h1 {
 .social {
   display: flex;
   justify-content: space-between;
-  width: 180px;
   margin-top: 30px;
+}
+
+.social a {
+  font-family: 'Assistant', sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+form {
+  width: 50%;
+}
+
+input {
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
 }
 
 a i {
   color: white;
+}
+
+.fab {
+  font-size: 20px;
+  font-family: 'Assistant', sans-serif;
 }
 
 #mail {
