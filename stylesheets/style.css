@@ -31,6 +31,7 @@ h1 {
   justify-items: center;
   position: relative;
   background-color: #E8E8E8;
+  padding: 0 100px;
 }
 
 
@@ -68,12 +69,14 @@ h1 {
   -webkit-filter: grayscale(55%);
   filter: grayscale(55%);
   transition: all 0.4s ease;
+  overflow: hidden;
 }
 
 .project img:hover {
   cursor: pointer;
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
+  transform: scale(1.02);
 }
 
 #one {
@@ -146,7 +149,7 @@ h1 {
 #img-1 {
   position: absolute;
   top: -50px;
-  left: -200px;
+  left: -100px;
   opacity: 0.2;
 }
 
@@ -174,7 +177,8 @@ h1 {
 
 .contact {
   background-color: #1B2022;
-  background-image: url(https://fcit.usf.edu/matrix/wp-content/uploads/2019/03/CircuitBoard-K-Wide.jpg);
+  background-image: linear-gradient(to bottom right, rgba(0,0,0,0.3), rgba(0,0,0, 0.6)),
+    url(https://fcit.usf.edu/matrix/wp-content/uploads/2019/03/CircuitBoard-K-Wide.jpg);
   padding: 30px 0;
   display: flex;
   justify-content: center;
