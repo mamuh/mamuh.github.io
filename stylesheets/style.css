@@ -43,9 +43,15 @@ h1, h2 {
   padding: 0 130px 0 130px;
 }
 
-#title {
-  font-size: 3.5em;
+#typed {
+  font-size: 3.6em;
   margin-bottom: 20px;
+}
+
+#quote {
+  opacity: 0;
+  transition: all 1s ease;
+  margin-top: 30px;
 }
 
 #intro-text {
