@@ -1,0 +1,475 @@
+body {
+  background-color: #323630;
+  box-sizing: border-box;
+  color: white;
+  font-size: 19px;
+}
+
+p, li {
+  font-family: 'Assistant', sans-serif;
+}
+
+h1 {
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 55px;
+  font-weight: 400;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0,3);
+  color: #4F4F4F;
+  letter-spacing: 0.25em;
+}
+
+.video-container p {
+  color: #4F4F4F;
+}
+
+.projects {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(29,75px);
+  color: #4F4F4F;
+  justify-items: center;
+  position: relative;
+  background-color: #E8E8E8;
+  padding: 0 130px;
+}
+
+
+.projects-container {
+  background-color: #E8E8E8;
+  display: flex;
+  justify-content: center;
+}
+
+.panel {
+    width: 100%;
+  }
+
+.project {
+  position: inherit;
+  top: -60px;
+  width: 320px;
+}
+
+.project h3 {
+  color: #4F4F4F;
+  /*color: white;*/
+  font-family: 'Nanum Myeongjo', serif;
+  letter-spacing: 0.25em;
+  /*background-color: #1C2124;*/
+  /*padding: 5px 10px;*/
+  font-weight: 400;
+  border-radius: 1px;
+}
+
+.project img {
+  border-radius: 2px;
+  object-fit: cover;
+  object-position: center top;
+  -webkit-filter: grayscale(55%);
+  filter: grayscale(55%);
+  transition: all 0.4s ease;
+  overflow: hidden;
+}
+
+.project img:hover {
+  cursor: pointer;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  transform: scale(1.02);
+}
+
+#one {
+  grid-row: 1 / 6;
+  grid-column: 1;
+}
+
+#two {
+  grid-row: 2 / 8;
+  grid-column: 2;
+}
+
+#three {
+  grid-row: 11 / 15;
+  grid-column: 1;
+}
+
+#four {
+  grid-row: 12 / 16;
+  grid-column: 2;
+}
+
+#five {
+  grid-row: 21 / 23;
+  grid-column: 1;
+}
+
+#six {
+  grid-row: 22 / 25;
+  grid-column: 2;
+}
+
+.about-me {
+  background-color: #1c2021;
+  padding: 80px;
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  border-radius: 3px;
+  font-family: 'Assistant', sans-serif;
+}
+
+.about-me p {
+  margin: 0;
+  text-align: justify;
+  line-height: 1.6em;
+}
+
+.about {
+  width: 100vw;
+  position: relative;
+  background-color: #191D1E;
+  height: 100vh;
+  margin-bottom: 390px;
+}
+
+#profile {
+  float: right;
+  margin-left: 45px;
+  object-fit: cover;
+  border-radius: 50%;
+  shape-outside: circle();
+  -webkit-filter: grayscale(50%);
+  filter: grayscale(50%);
+}
+
+#img-1 {
+  position: absolute;
+  top: -50px;
+  left: -100px;
+  opacity: 0.2;
+}
+
+#img-2 {
+  position: absolute;
+  top: 250px;
+  left: -140px;
+  opacity: 0.2;
+}
+
+#img-3 {
+  position: absolute;
+  top: -60px;
+  right: -70px;
+  opacity: 0.2;
+}
+
+#img-4 {
+  position: absolute;
+  top: 300px;
+  right: -120px;
+  opacity: 0.2;
+}
+
+
+.contact {
+  background-color: #1B2022;
+  background-image: linear-gradient(to bottom right, rgba(0,0,0,0.3), rgba(0,0,0, 0.6)),
+    url(https://fcit.usf.edu/matrix/wp-content/uploads/2019/03/CircuitBoard-K-Wide.jpg);
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.contact h1 {
+  color: white;
+}
+
+.contact-container {
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.social a {
+  font-family: 'Assistant', sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+form {
+  width: 50%;
+}
+
+input {
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+}
+
+a i {
+  color: white;
+}
+
+.fab {
+  font-size: 20px;
+  font-family: 'Assistant', sans-serif;
+}
+
+#mail {
+  color: white;
+  font-family: 'Assistant', sans-serif;
+}
+
+
+
+
+html, body{
+  width:100%;
+  height:100%;
+  padding:0px;
+  margin:0px;
+  background: #191d1e;
+  background: -moz-linear-gradient(0deg,  #191d1e 50%, #283139 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(50%,#191d1e), color-stop(100%,#283139));
+  background: -webkit-linear-gradient(0deg,  #191d1e 50%,#283139 100%);
+  background: -o-linear-gradient(0deg,  #191d1e 50%,#283139 100%);
+  background: -ms-linear-gradient(0deg,  #191d1e 50%,#283139 100%);
+  background: linear-gradient(0deg,  #191d1e 50%,#283139 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#191d1e', endColorstr='#283139',GradientType=1 );
+  background-attachment: fixed;
+  scroll-behavior: smooth;
+}
+
+
+
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+
+a {
+  text-decoration: none;
+}
+
+
+
+/*VIDEO*/
+.video-container {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  z-index:0;
+}
+
+video {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.overlay {
+  width: 650px;
+  height: 200px;
+  text-align: center;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index:1;
+}
+
+.overlay-nav {
+  width: 95%;
+  padding-top: 40px;
+  position:absolute;
+  z-index:1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.overlay-nav li {
+  list-style: none;
+  display: inline;
+  margin-left: 30px;
+  color: #4F4F4F;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.overlay-nav a {
+  cursor: pointer;
+  color: #4F4F4F;
+}
+
+.overlay-nav a:hover {
+  cursor: pointer;
+  color: #4F4F4F;
+}
+
+.overlay-nav img {
+ width: 60px;
+ height: 50px;
+ margin-left: 40px;
+ top: 0;
+}
+
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+
+}
+
+@media (max-width: 600px) {
+  video {
+
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.fly-in-text {
+  list-style: none;
+}
+
+.fly-in-text ul {
+  padding: 0;
+}
+
+
+.fly-in-text li {
+  display: inline-block;
+  font-family: 'Nanum Myeongjo', serif;
+  margin-right: 20px;
+  font-size: 4em;
+  opacity: 1;
+  transition: all 2s ease;
+  color: #4F4F4F;
+}
+
+.enter-button {
+  display: block;
+  text-align: center;
+  font-size: 1em;
+  opacity: 1;
+  margin-top: 30px;
+  transition: all 1s ease 1s;
+}
+
+.content-hidden .fly-in-text li { opacity: 0; }
+.content-hidden .fly-in-text li:nth-child(1) { transform: translate3d(90px, 0, 0); }
+.content-hidden .fly-in-text li:nth-child(2) { transform: translate3d(60px, 0, 0); }
+.content-hidden .fly-in-text li:nth-child(3) { transform: translate3d(30px, 0, 0); }
+.content-hidden .fly-in-text li:nth-child(4) { transform: translate3d(0px, 0, 0); }
+.content-hidden .fly-in-text li:nth-child(5) { transform: translate3d(-30px, 0, 0); }
+.content-hidden .fly-in-text li:nth-child(6) { transform: translate3d(-60px, 0, 0); }
+.content-hidden .fly-in-text li:nth-child(7) { transform: translate3d(-90px, 0, 0); }
+
+.content-hidden .enter-button { opacity: 0; transform: translate3d(0, -30px, 0); }
+
+
+
+
+
+
+
+
+
+.hvr-underline-from-left, .hvr-underline-from-left2 {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #4F4F4F;
+  height: 1px;
+  opacity: 0.7;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+  right: 0;
+}
+
+.hvr-underline-from-left2:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: white;
+  height: 1px;
+  opacity: 0.7;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-left2:hover:before, .hvr-underline-from-left2:focus:before, .hvr-underline-from-left2:active:before {
+  right: 0;
+}
+
