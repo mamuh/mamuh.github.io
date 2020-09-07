@@ -33,6 +33,10 @@ h1, h2 {
   background: #000;
 }
 
+.darker h2 {
+  color: #fd6ea1;
+}
+
 .intro {
   display: flex;
   align-items: center;
@@ -111,6 +115,9 @@ h1, h2 {
   align-items: center;
   margin-bottom: 50px;
   transition: all 0.3s ease;
+  padding: 10px;
+  height: 200px;
+  border-radius: 5px;
 }
 
 .project-card img {
@@ -126,7 +133,7 @@ h1, h2 {
 
 .project-text {
   width: 80%;
-  padding-right: 15px;
+  padding-right: 10px;
 }
 
 
@@ -137,7 +144,7 @@ h1, h2 {
 
 a i {
   font-size: 25px;
-  color: white;
+  color: #fd6ea1;
   text-decoration: none;
 }
 
