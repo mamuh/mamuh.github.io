@@ -146,6 +146,11 @@ a i {
   font-size: 25px;
   color: #fd6ea1;
   text-decoration: none;
+  padding: 15px 28px;
+}
+
+a i:hover {
+  background: grey;
 }
 
 .social {
