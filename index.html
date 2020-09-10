@@ -219,7 +219,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
     <script>
-
       var typed = new Typed('#typed', {
         stringsElement: '#title',
         typeSpeed: 60,
@@ -229,6 +228,21 @@
           document.getElementById('quote').style.opacity = "1";
         },
       });
+    </script>
+
+    <script>
+      function GetURLParameter(sParam)
+      {
+          var sPageURL = window.location.search.substring(1);
+          // var sURLVariables = sPageURL.split('&');
+
+          var sParameterName = sURLVariables[i].split('=');
+          if (sParameterName[0] == sParam)
+          {
+              return sParameterName[1];
+          }
+
+      }​
     </script>
 
   </body>
