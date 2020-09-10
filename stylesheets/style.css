@@ -284,3 +284,10 @@ a i {
     height: 200px;
   }
 }
+
+::selection {
+  background: #ffa5c4; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #ffa5c4; /* Gecko Browsers */
+}
