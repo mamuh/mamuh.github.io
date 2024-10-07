@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mariana</title>
+    <!-- main stylesheet -->
+    <link rel="stylesheet" type="text/css" href="./stylesheets/style.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="https://mariana.dev/images/ruby.png"/>
+    <!-- google font -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.cdnfonts.com/css/metropolis-2" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <div id="intro-text">
+        <div>
+          <div id="title">
+            <p>Mariana, <br> Full-Stack Developer</p>
+          </div>
+          <span id="typed"></span>
+        </div>
+        <br>
+        <em data-aos="fade" id="quote">"As long as you're learning, you're not failing"</em>
+    </div>
+
+    <div class="projects lighter">
+      <h2 data-aos="fade-right">Projects</h2>
+
+      <a href="https://www.unaconsulta.com.br/" target="_blank">
+      <div class="project-card" data-aos="fade-up">
+        <img src="./images/consulta.png" alt="">
+        <div class="project-text">
+          <h4>1CONSULT</h4>
+          <p>Property reviews app where you can search for an address and review the property
+            you've lived in or read previous reviews to decide wherther a place you're considering is good to move in or not.
+          <br><b><em>Stack: Ruby on Rails, JavaScript, HTML5, SCSS</em></b></p>
+        </div>
+      </div>
+      </a>
+
+      <a href="https://geek-inventory.herokuapp.com/" target="_blank">
+      <div class="project-card" data-aos="fade-up">
+        <img src="./images/geeek.png" alt="">
+        <div class="project-text">
+          <h4>GEEK INVENTORY</h4>
+          <p>Marketplace for buying and selling fictional video game items. You'll need to log in to sell an item but feel free to browse for the existing items!
+          <br><b><em>Stack: Ruby on Rails, JavaScript, HTML5, SCSS</em></b></p>
+        </div>
+      </div>
+      </a>
+
+      <a href="https://mars-rovers-command.herokuapp.com/" target="_blank">
+      <div class="project-card" data-aos="fade-up">
+        <img src="./images/mars.png" alt="">
+        <div class="project-text">
+          <h4>MARS ROVERS</h4>
+          <p>Single page app that consumes an API do set a plateau on Mars and deploys rovers to explore it according to your commands.
+          <br><b><em>Stack: React, Redux, Axios, HTML5, SCSS</em></b></p>
+        </div>
+      </div>
+      </a>
+
+      <a href="https://priorize-m.herokuapp.com/vagas" target="_blank">
+      <div class="project-card" data-aos="fade-up">
+        <img src="./images/priorize.png" alt="">
+        <div class="project-text">
+          <h4>PRIORIZE APP</h4>
+          <p>A ReactJS app developed for a software company in Brazil where managing directors could list the roles they were hiring for and priorize them across all departments. This is just the front-end bit for demonstration, as the final app was linked to their Firebase DB.
+          <br><b><em>Stack: React, Redux, HTML5, SCSS, Firebase</em></b></p>
+        </div>
+      </div>
+      </a>
+
+      <a href="https://slack-redux-react.herokuapp.com/" target="_blank">
+      <div class="project-card" data-aos="fade-up">
+        <img src="./images/slackk.png" alt="">
+        <div class="project-text">
+          <h4>SLACK CLONE</h4>
+          <p>Web app that simulates Slack channels and conversations. It posts your messages to an API and fetches new messages everytime someone sends a new message to that channel.
+          <br><b><em>Stack: React, Redux, HTML5, SCSS</em></b></p>
+        </div>
+      </div>
+      </a>
+
+
+      <a href="https://mister-cocktail-mamuh.herokuapp.com/" target="_blank">
+      <div class="project-card" data-aos="fade-up">
+        <img src="./images/cocktail.png" alt="">
+        <div class="project-text">
+          <h4>MR COCKTAIL</h4>
+          <p>My first Reails projects. It's a web application where you can create cocktail recipes, list ingredients, upload their photos and review them.
+          <br><b><em>Stack: Ruby on Rails, JavaScript, HTML5, SCSS</em></b></p>
+        </div>
+      </div>
+      </a>
+
+    </div>
+
+    <div class="section contact darker">
+      <div class="contact-container" data-aos="fade-right">
+        <h2>Contact</h2>
+
+        <div class="social">
+          <a href="mailto:musardo@mail.com"  class="glow-button"><i class="fas fa-envelope"></i></a>
+          <a href="https://github.com/mamuh" target="_blank" class="glow-button"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/mariana-caramori/" target="_blank" class="glow-button"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script type="text/javascript" src="particles.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
+    <script>
+      var typed = new Typed('#typed', {
+        stringsElement: '#title',
+        typeSpeed: 60,
+        startDelay: 700,
+        showCursor: false,
+        onComplete: (self) => {
+          document.getElementById('quote').style.opacity = "1";
+        },
+      });
+    </script>
+
+    <script>
+      /* chameleon.io Staging script */
+
+      !function(d,w){var t="S6CeTgUn6AqcMVh3LDni7SLyBCyJh41WjkGglJtKwclQTP-1MegOD-D4IGlQAsmeLckaOk",c="chmln",i=d.createElement("script");if(w[c]||(w[c]={}),!w[c].root){w[c].accountToken=t,w[c].location=w.location.href.toString(),w[c].now=new Date,w[c].fastUrl='https://fast-staging.chameleon.io/';var m="identify alias track clear set show on off custom help _data".split(" ");for(var s=0;s<m.length;s++){!function(){var t=w[c][m[s]+"_a"]=[];w[c][m[s]]=function(){t.push(arguments);};}();}i.src=w[c].fastUrl+"messo/"+t+"/messo.min.js",i.async=!0,d.head.appendChild(i);}}(document,window);
+
+      /* trychameleon.com Staging user identification and data */
+
+      // IMPORTANT: Replace USER.ID_IN_DB, USER.EMAIL, USER.FULL_NAME below with your app's actual variable names.
+      chmln.identify('61019aa697e10700072a17d1');
+    </script>
+
+  </body>
+</html>
